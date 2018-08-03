@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>Metaverse Plugin</title>
+    <script src="https://api.myetpwallet.com/lightwallet.js"></script>
+    <style>
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <img class="center" src="https://mvs.org/images/metaverselogo.png">
+    <p align="center" id="status"></p>
+    <script>
+        try {
+            let MVS = new Lightwallet();
+            document.getElementById('status').innerHTML = "Connected";
+        } catch (error) {
+            if (error == "Plugin must be child of lightwallet")
+                document.getElementById('status').innerHTML = error;
+        }
+    </script>
+</body>
+
+</html>
