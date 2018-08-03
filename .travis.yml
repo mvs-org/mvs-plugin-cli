@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+- '10'
+deploy:
+  provider: npm
+  email: canguruhh@mutzl.org
+  api_key:
+    secure: ZLsSqJXqjgc1dV16SUOziO6pe1R9OIDsVHcZ2/ePfeAe8QVkzCJUMJOrJxi2bE74/4vTU8b/tIrTT7zWdqLDGt9xp5AyM/yyjR3zeElPxykkvG15ZKLmHN+0DJeH21sQbqAsRTLRPpm2hem/vZ+9dWifK+RkjZtS7J9ewm74Leo5ZanizRjwLIZZ43Hp7l7GZQxcYSIqBonyS8mzT76nfUJ4FJNHpJQaGZi/uNV1TfqXs7moKUATn9xJHZIqDuEVQvU7gIjw9fkfx5BhLyjEh2deLvBpi5Uc0tpC2GZTiMIH20iG9YT0bMKwbu8YcUXTFayyXPhIwmDWvqgV845cPUauLSGpp64DEsydtF3In+eVsjdZh81exT68Y3uVbm89qXgrrV96LcFCuc/HTnGO7kf43aF06c7pcHr9NBwjfbv6yg5IOIf0VyW2FFwYDh3lfFTzD1XSeIGSYcvpX8CWvLQGApJHJoguTL15c02pTaTziuOIywsjqtHd1NHuTY84W1wO22NYym+M1PEjx9S6RVhwISi2j/uA62sBxMY4By5umSpb0UjM+Dk9VrIJMZKV6l3ZEs7QlmZ1IkmelPd8qX93ROymTYjIQevvWoS2FOFJKKl9ifeF0nC+0DgQsCpejGnUNl79RpIc8XzDWRrNu8c6KJh5XLB6ByRO0MXciFg=
+  on:
+    repo: canguruhh/mvs-plugin-cli
