@@ -89,8 +89,7 @@ program
                 fs.mkdirSync(name);
                 fs.copyFileSync(dir + "/init/blank/index.html", name + "/index.html");
                 fs.writeFileSync(name + '/config.json', JSON.stringify(config));
-                console.log('The file has been saved!');
-                console.log(config);
+                terminate(0);
             })
             .catch(console.error);
     });
@@ -99,7 +98,8 @@ program
     .command('serve')
     .alias('s')
     .description('Serve the plugin using the built-in webserver')
-    .option("-p, --port <port>", "Port to use")
+    .option("-p, --port <port>", "Port to use (default: 8080)")
+    .option("-h, --host <host>", "Host to use (default: 0.0.0.0)")
     .action(function(options) {
         var logger = {
             info: console.log,
@@ -120,11 +120,15 @@ program
                 }
             }
         };
+        var port = options.port || 8080;
         server.createServer({
             logFn: logger.request,
             cors: true,
             root: '.'
-        }).listen(options.port || 8080);
+        }).listen(port, options.host || "0.0.0.0", ()=>{
+            term.magenta('Plugin server started on port %s.\n', port);
+            console.info('To open the plugin on the lightwallet just open it on testnet, go to settins and add the plugins config file http://127.0.0.1:%s/config.json\n', port);
+        });
     }).on('--help', function() {
         console.log('  Examples:');
         console.log();
