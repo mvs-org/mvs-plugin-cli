@@ -1,6 +1,6 @@
 {
   "name": "mvs-plugin-cli",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Plugin cli for the Metaverse Blockchain",
   "main": "mvs-plugin-cli.js",
   "bin": {
