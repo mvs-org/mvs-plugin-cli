@@ -16,6 +16,8 @@ It will ask you some questions and generate a minimal project setup.
 
 In the created folder you can see the generated files.
 
+![GIF to show how to start](https://raw.githubusercontent.com/canguruhh/mvs-plugin-cli/master/images/how-to-start.gif)
+
 ## Run
 Within a project folder you can use the CLI to host the plugin:
 ``` bash
