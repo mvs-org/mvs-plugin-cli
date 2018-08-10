@@ -11,14 +11,6 @@ var dir = path.dirname(require.main.filename);
 
 const PERMISSIONS = [
     {
-        text: "List active permissions",
-        value: "permissions"
-    },
-    {
-        text: "Get activated netowrk",
-        value: "network"
-    },
-    {
         text: "List addresses",
         value: "addresses"
     },
@@ -31,20 +23,12 @@ const PERMISSIONS = [
         value: "sign"
     },
     {
-        text: "Verify messages",
-        value: "verify"
-    },
-    {
         text: "Create MIT",
         value: "create-mit"
     },
     {
         text: "Unlock wallet",
         value: "unlock"
-    },
-    {
-        text: "Broadcast transactions",
-        value: "broadcast"
     }
 ];
 
