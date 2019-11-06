@@ -107,6 +107,7 @@ program
         var port = options.port || 8080;
         server.createServer({
             logFn: logger.request,
+            cache: -1,
             cors: true,
             root: '.'
         }).listen(port, options.host || "0.0.0.0", ()=>{
