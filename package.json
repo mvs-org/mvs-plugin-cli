@@ -26,6 +26,6 @@
     "http-server": "^0.11.1",
     "path": "^0.12.7",
     "select-shell": "^1.1.2",
-    "terminal-kit": "^1.22.1"
+    "terminal-kit": "^2.1.8"
   }
 }
